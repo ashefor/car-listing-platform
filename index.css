@@ -29,7 +29,7 @@ a:hover{
     text-transform: uppercase
 }
 #mainbody{
-    background: red
+    /* background: red */
 }
 #body_content{
     max-width: 1200px;
@@ -47,7 +47,7 @@ a:hover{
     width: 100%
 }
 #showallcars{
-    /* display: flex; */
+    display: flex;
     width: 100%
 }
 #populateImg{
@@ -78,10 +78,11 @@ a:hover{
     /* text-align: center; */
     padding: 0.5rem;
     color: black;
-    background: green;
+    /* background: green; */
     cursor: pointer;
     /* border-radius: 7px; */
     transition: all 0.25s ease-out;
+    margin-bottom: unset !important
   }
   
   .lbl-toggle:hover {
@@ -90,7 +91,7 @@ a:hover{
   
   .lbl-toggle::after {
     content: ' ';
-    display: block;
+    display: inline-block;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid currentColor;
@@ -134,6 +135,4 @@ a:hover{
  .filters{
      width: 25%
  }
- label{
-     margin-bottom: unset !important
- }
+ 
