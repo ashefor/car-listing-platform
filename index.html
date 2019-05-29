@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sell It! | A Car Listing Platform</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="body_container">
+        <nav id="navbar">
+            <div class="navbar_div">
+                <div class="go_Home">
+                    <span><a href="#">
+                            sell it
+                        </a></span>
+                </div>
+                <div class="add_cars">
+                    <button class="btn btn-outline-success">
+                        Add Cars
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        Search for Car
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mainbody">
+            <div id="body_content">
+               <div class="space_content">
+                   <div class="filters">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <div data-target="#showmodel">
+                                        Model
+                                    </div>
+                                    <div id="showmodel">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                        <a href="showmake">make</a>
+                                        <div id="showmake">
+                                            <ul>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                            <a href="showtype">type</a>
+                                            <div id="showtype">
+                                                <ul>
+                                                    <li>1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                            </ul>
+                        </form>
+                   </div>
+                        <div id="show_cars">
+                            <div id="showallcars">
+                                <div id="populateImg">
+                                    <div id="one"></div>
+                                    <div id="two"></div>
+                                </div>
+                                <!-- <div id="populatecars"></div> -->
+                            </div>
+                        </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
