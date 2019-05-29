@@ -1,22 +1,6 @@
-// document.addEventListener("DomContentLoaded", function(){
-//     alert('i have loaded')
-// })
 
 window.onload = function () {
-    // console.log('data')
-    // let button = document.getElementById('showcars');
-
-    // button.addEventListener('click', loadcars)
-    // function loadcars(){
-    //     let xml = new XMLHttpRequest;
-    //     xml.open('GET', 'http://localhost:3005/cars', true)
-    //     xml.onload = function(){
-    //     // let data = JSON.parse(this.responseText)
-    //     console.log('data')
-    // }
-    // xml.send()
-    // // console.log('data')
-    // }
+   
     const maindiv = document.getElementById('populatecars')
     const img = document.getElementById('populateImg')
     const one = document.getElementById('one')
