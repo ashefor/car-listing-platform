@@ -1,0 +1,59 @@
+#body_container{
+    
+}
+#navbar{
+    background: grey;
+    padding: 20px;
+}
+.navbar_div{
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add_cars{
+    margin-left: auto;
+    
+}
+.add_cars button{
+    color: white;
+    border: 1px solid black
+}
+a:hover{
+    text-decoration: none !important
+}
+.go_Home a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase
+}
+#mainbody{
+    background: red
+}
+#body_content{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100vh; */
+}
+.space_content{
+    display: flex
+}
+#show_cars{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+    width: 100%
+}
+#showallcars{
+    /* display: flex; */
+    width: 100%
+}
+#populateImg{
+    display: flex;
+    width: 100%
+}
+#populatecars{
+    width: 100%
+}
