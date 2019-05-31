@@ -1,0 +1,63 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "name": "toyota"
+        },
+        {
+            "id": 2,
+            "name": "honda"
+        },
+        {
+            "id": 3,
+            "name": "landrover"
+        }
+    ],
+     "model": [
+                {
+                    "id": 1,
+                    "model_name": "corolla",
+                    "carId": 1
+                },
+                {
+                    "id": 2,
+                    "model_name": "camry",
+                    "carId": 1
+                },
+                {
+                    "id": 3,
+                    "model_name": "venza",
+                    "carId": 1
+                },
+                {
+                    "id": 4,
+                    "model_name": "accord",
+                    "carId": 2
+                },
+                {
+                    "id": 5,
+                    "model_name": "civic",
+                    "carId": 2
+                },
+                {
+                    "id": 6,
+                    "model_name": "city",
+                    "carId": 2
+                },
+                {
+                    "id": 7,
+                    "model_name": "sport",
+                    "carId": 3
+                },
+                {
+                    "id": 8,
+                    "model_name": "LR2",
+                    "carId": 3
+                },
+                {
+                    "id": 9,
+                    "model_name": "LR3",
+                    "carId": 3
+                }
+            ]
+}

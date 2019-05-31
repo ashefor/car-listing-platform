@@ -1,6 +1,3 @@
-body{
-  font-family: 'Montserrat', sans-serif;
-}
 #body_container{
     background: #f2f2f2
 }
@@ -43,7 +40,7 @@ a:hover{
     /* background: #f2f2f2 */
 }
 #body_content{
-    max-width: 1000px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     /* height: 100vh; */
@@ -55,23 +52,20 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 25px;
-    width: 75%
+    width: 100%
 }
 #hide_cars{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
     width: 100%;
 }
-#hide_cars h2{
-    text-align: center
-}
-.showallcars{
+#showallcars{
     border: 5px solid grey;
     display: flex;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.5);
-}
-.showallcars:hover{
-    cursor: pointer;
 }
 #showonecar{
     border: 5px solid grey;
@@ -79,15 +73,17 @@ a:hover{
     width: 100%;
     border-radius: 5px;
     position: relative;
-    background: white;
+    background: wheat;
     /* box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.5); */
 }
 .car_description_container{
-    background: white;
+    margin-top:50px;
     margin-bottom: 50px;
 }
 .car_description{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
     display: block
 }
 .cards{
@@ -96,13 +92,13 @@ a:hover{
 }
 .mainfeatures{
     display: flex;
-    background: wheat;
+    background: white;
     position: relative
 }
 .onecarmainfeatures{
-    display: flex;
-    background: white;
+    /* display: flex; */
     /* position: relative */
+    margin-top: 50px;
 }
 .mainfeatures a{
     color: unset;
@@ -129,11 +125,9 @@ a:hover{
     padding: 0;
     list-style: none
 }
-.wrap-collabsible {
-    /* margin-bottom: 1.2rem 0; */
-    background: #cccc;
-    border-bottom: 1px solid gray
-  }
+/* .wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+  } */
   
   input.toggle[type='checkbox'] {
     display: none;
@@ -205,41 +199,62 @@ a:hover{
     padding: 0;
   }
  .filters{
-     width: 25%;
-     margin-right: 50px;
+     width: 25%
  }
  .pricing{
+     display: flex;
+     flex-direction: row-reverse;
      margin-left: auto
  }
- .pricing h2::before{
+ .pricing::before{
+}
+ .pricing h2{
+     float: right;
+     margin-left: 50px;
+}
+.pricing h2::before{
     content: "₦"
+}
+.pricing ul{
+    display: block;
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: capitalize
+}
+.pricing ul li{
+    font-size: 20px;
+    font-weight: 200
 }
  .mainfeatures_details{
      margin-top: 20px;
  }
  .mainfeatures_details ul{
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.mainfeatures_details ul li{
+    padding: 10px;
+    font-size: 25px;
 }
  .choicechecklist input[type='checkbox']{
     /* position: absolute;
     right: 0;
     top: 50% */
  }
- .choicechecklist label{
-     width: 100%
- }
- .choicechecklist a{
-     display: flex
- }
  #labelling{
      position: relative;
  }
-.choicechecklist input{
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 25%;
-}
+
 
  .modal {
     display: none; /* Hidden by default */
@@ -266,34 +281,33 @@ a:hover{
   
   /* The Close Button */
   .close {
-    color: white;
+    color: #aaaaaa;
     float: right;
-    /* font-size: 28px;
+    font-size: 28px;
     font-weight: bold;
-    width: fit-content; */
-    margin-right: 20px;
+    width: fit-content;
   }
   
-  /* .close:hover,
+  .close:hover,
   .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  } */
+  }
   .imgview{
       width: 300px;
-      height: 250px;
+      height: auto;
       padding: 20px
   }
   .onecar_imgview{
     /* width: 500px; */
-    width: 100%;
-    height: 400px;
+    width: 50%;
+    height: auto;
     padding: 20px
   }
   .car_header{
       text-transform: capitalize;
-
+      font-size: 100px;
   }
   .delete{
     position: absolute;
@@ -350,23 +364,19 @@ textarea{
 }
 #editentry{
     float: right;
-    margin-right: 20px;
-    background: green;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    outline: none;
-    color: white
+    margin-right: 20px
 }
-#canceledit{
-    float: right;
-    margin-right: 20px;
-    background: red;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    outline: none;
-    color: white
+#maincard{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px;
+    width: auto;
+}
+.desc_header{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: capitalize
 }
 .deletethis{
     background: red;
@@ -374,8 +384,7 @@ textarea{
     border-radius: 5px;
     border: 1px solid transparent;
     outline: none;
-    color: white;
-    display: none
+    color: white
 }
 .editthis{
     background: blue;
@@ -383,26 +392,7 @@ textarea{
     border-radius: 5px;
     border: 1px solid transparent;
     outline: none;
-    color: white;
-    display: none
-}
-.mainfeatures_header a{
-    font-size: 50px;
-    font-weight: 700;
-    text-decoration: none
-}
-.mainfeatures_header a:hover{
-    color: blue;
-    text-decoration: underline
-}
-#search_cars ul li{
-     background: #cccc;
-}
-.contactdetails::before{
-    content: "\260E";
-}
-.contactdetails{
-    color: green
+    color: white
 }
 @media only screen and (max-width: 479px) {
     #navbar{
@@ -461,7 +451,27 @@ textarea{
         display: block
     }
     .pricing{
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        display: block !important;
+    }
+    .pricing h2{
+        margin-bottom: 25px;
+    }
+    .pricing ul:last-child{
+        margin-bottom: 30px
+    }
+    .onecar_imgview{
+        width: 100%
+    }
+    #maincard{
+        position: unset;
+        margin: 0;
+    }
+    .onecarmainfeatures{
+        margin-top: unset
+    }
+    #hide_cars{
+        padding: 5px
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
@@ -506,7 +516,7 @@ textarea{
     }
     .imgview{
         width: 100%;
-        height: 300px;
+        height: 250px;
         padding: 20px
     }
     body{
@@ -518,70 +528,29 @@ textarea{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: flex
+        display: block
     }
     .pricing{
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        display: block !important;
     }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    #navbar{
-        max-width: 100%;
+    .pricing h2{
+        margin-bottom: 25px;
     }
-    #body_container{
-        max-width: 100%
+    .pricing ul:last-child{
+        margin-bottom: 30px
     }
-    /* #mainbody{
-        max-width: 100%
-    } */
-    #show_cars{
-        display: block;
-        grid-column-gap: 10px;
-        width: 100%;
-        /* width: 100%; */
-        margin-left: auto;
-        margin-right: auto;
+    .onecar_imgview{
+        width: 100%
     }
-    /* .filters{
-        display: none;
-    } */
-    .showallcars{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    #maincard{
+        position: unset;
+        margin: 0;
     }
-    /* #body_content{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-    .space_content{
-        display: flex;
-        width: 100%;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
+    .onecarmainfeatures{
+        margin-top: unset
     }
-    .imgview{
-        width: 100%;
-        height: 300px;
+    #hide_cars{
         padding: 20px
-    }
-    body{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .mainfeatures{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex
-    }
-    .pricing{
-        margin-bottom: 50px
     }
 }

@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sell It! | A Car Listing Platform</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Cuprum|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -17,74 +31,247 @@
         <nav id="navbar">
             <div class="navbar_div">
                 <div class="go_Home">
-                    <span><a href="#">
-                            sell it
+                    <span><a href="" id="gohome">
+                            garage
                         </a></span>
                 </div>
                 <div class="add_cars">
-                    <button class="btn btn-outline-success">
-                        Add Cars
+                    <button class="btn btn-success">
+                        <a href="sell-car.html">Add Cars</a>
                     </button>
-                    <button class="btn btn-outline-primary">
+                    <!-- <button class="btn btn-primary">
                         Search for Car
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </nav>
         <div id="mainbody">
             <div id="body_content">
-               <div class="space_content">
-                   <div class="filters">
-                        <form action="">
-                            <ul>
-                                    <li class="wrap-collabsible">
-                                            <input id="make" class="toggle" type="checkbox">
-                                            <label for="make" class="lbl-toggle">Make</label>
-                                            <div class="collapsible-content">
-                                              <div class="content-inner">
-                                                <ul>
-                                                    <li>one</li>
-                                                    <li>one</li>
-                                                    <li>one</li>
-                                                </ul>
-                                              </div>
-                                            </div>
-                                        </li>
-                                        <li class="wrap-collabsible">
-                                                <input id="model" class="toggle" type="checkbox">
-                                                <label for="model" class="lbl-toggle">Model</label>
-                                                <div class="collapsible-content">
-                                                  <div class="content-inner">
-                                                    <ul>
-                                                        <li>one</li>
-                                                        <li>one</li>
-                                                        <li>one</li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                            </li>
-                                            <li class="wrap-collabsible">
-                                                    <input id="type" class="toggle" type="checkbox">
-                                                    <label for="type" class="lbl-toggle">Make</label>
-                                                    <div class="collapsible-content">
-                                                      <div class="content-inner">
-                                                        <ul>
-                                                            <li>one</li>
-                                                            <li>one</li>
-                                                            <li>one</li>
-                                                        </ul>
-                                                      </div>
-                                                    </div>
+                <div class="space_content">
+                    <div class="filters">
+                        <form  class="submit-selection" id="search-cars" >
+                            
+                                <h4>Filter</h4>
+                            <ul>    
+                                <li class="wrap-collabsible">
+                                    <input id="make" class="toggle" type="checkbox">
+                                    <label for="make" class="lbl-toggle">Car Name</label>
+                                    <div class="collapsible-content">
+                                        <div class="content-inner">
+                                            <ul class="choicechecklist" id="choicechecklist">
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="one" id="labelling">Toyota
+                                                            <input type="checkbox" id="one" name="q" value="toyota">
+                                                        </label>
+
+                                                    </a>
                                                 </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="two" id="labelling">Benz
+                                                            <input type="checkbox" id="two" name="q" value="benz">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="three" id="labelling">Ferrari
+                                                            <input type="checkbox" id="three" name="q" value="ferrari">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="four" id="labelling">Range
+                                                            <input type="checkbox" id="four" name="q" value="range">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="five" id="labelling">Ferrari
+                                                            <input type="checkbox" id="five" name="q" value="mazda">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="six" id="labelling">BMW
+                                                            <input type="checkbox" id="six" name="q" value="bmw">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="seven" id="labelling">Bugatti
+                                                            <input type="checkbox" id="seven" name="q" value="bugatti">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="eight" id="labelling">Honda
+                                                            <input type="checkbox" id="eight" name="q" value="honda">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="wrap-collabsible">
+                                    <input id="model" class="toggle" type="checkbox">
+                                    <label for="model" class="lbl-toggle">Model</label>
+                                    <div class="collapsible-content">
+                                        <div class="content-inner">
+                                            <ul class="choicechecklist">
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="one4" id="labelling">one
+                                                            <input type="checkbox" id="one4">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="two" id="labelling">two
+                                                            <input type="checkbox" id="two">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="three" id="labelling">three
+                                                            <input type="checkbox" id="three">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="wrap-collabsible">
+                                    <input id="type" class="toggle" type="checkbox">
+                                    <label for="type" class="lbl-toggle">Make</label>
+                                    <div class="collapsible-content">
+                                        <div class="content-inner">
+                                            <ul class="choicechecklist">
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="one" id="labelling">one
+                                                            <input type="checkbox" id="one">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="two" id="labelling">two
+                                                            <input type="checkbox" id="two">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <label for="three" id="labelling">three
+                                                            <input type="checkbox" id="three">
+                                                        </label>
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </form>
+                    </div>
+                    <div id="show_cars">
 
-                        
-                   </div>
-                        <div id="show_cars">
-                            
+                    </div>
+                    <div id="hide_cars" style="display: none">
+                        <h2>
+                            No Entry Found
+                        </h2>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+
+                            <form action="" id="editform">
+                                <div id="firstrow" style="display: flex; width: 100%">
+                                    <div id="formelements">
+                                        <label for="car_make">
+                                            Make
+                                        </label>
+                                        <input type="text" id="car_make" class="input">
+                                    </div>
+                                    <div id="formelements">
+                                        <label for="car_model">
+                                            Model
+                                        </label>
+                                        <input type="text" id="car_model">
+                                    </div>
+                                    <div id="formelements">
+                                        <label for="car_year">
+                                            Year
+                                        </label>
+                                        <input type="number" id="car_year">
+                                    </div>
+                                </div>
+                                <div id="secondrow">
+                                    <div id="formelements">
+                                        <label for="car_color">
+                                            Color
+                                        </label>
+                                        <input type="text" id="car_color">
+                                    </div>
+                                    <div id="formelements">
+                                        <label for="transmission_mode">
+                                            Transmission
+                                        </label>
+                                        <input type="text" id="transmission_mode">
+                                    </div>
+                                    <div id="formelements">
+                                        <label for="car_price">
+                                            Price
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">₦</span>
+                                            <input type="number" id="car_price">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="descriptionarea">
+                                    <label for="car_description">
+                                        Description
+                                    </label>
+                                    <textarea name="" id="car_description" cols="30" rows="10"></textarea>
+                                </div>
+                                <input type="number" id="entry-id" style="display: none">
+                                <button id="canceledit" class="canceledit">
+                                    Cancel
+                                </button>
+                                <button id="editentry" type="submit">Submit Request</button>
+                            </form>
                         </div>
-               </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
